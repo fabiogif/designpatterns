@@ -1,6 +1,6 @@
 <?php
 
-class calculadorDeImposto {
+class calculadoraDeImposto {
 
 
     public function calcula(Orcamento $Orcamento, $imposto)

@@ -51,7 +51,6 @@ echo '</br>';
 echo '</br> Testes de Descontos: </br>';
 
     $calculadoraDeDescontos = new calculadoraDeDesconto();
-
     echo "Desconto: ";
  
     $reforma->addItem(new Item("Tijolo", 290));
@@ -60,4 +59,3 @@ echo '</br> Testes de Descontos: </br>';
     $reforma->addItem(new Item("Arenoso", 250));
         
     echo $calculadoraDeDescontos->desconto($reforma);
-

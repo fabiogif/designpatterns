@@ -23,15 +23,15 @@ require "IPVA.php";
 $reforma = new Orcamento(490);
 
 $calculadora = new calculadoraDeImposto();
-
+echo 'ICMS: ';
 echo $calculadora->calcula($reforma, new ICMS());
 
 echo '</br>';
-
+echo 'ISS: ';
 echo $calculadora->calcula($reforma, new ISS());
 
 echo '</br>';
-
+echo 'IPVA: ';
 echo $calculadora->calcula($reforma, new IPVA());
 
 //Chain Of Responsibility

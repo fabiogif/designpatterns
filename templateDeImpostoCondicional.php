@@ -1,5 +1,5 @@
 <?php 
-//Template Method
+//Tem plate Method
 abstract class TemplateDeImpostoCondicional implements Imposto{
 
     public function calcula(Orcamento $Orcamento)

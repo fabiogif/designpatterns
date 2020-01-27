@@ -13,7 +13,6 @@ class DescontoMilReais  implements Desconto{
         } else {
             return  $this->proximoDesconto->desconto($Orcamento);
         }
-
     }
 
     public function setProximo(Desconto $proximo)

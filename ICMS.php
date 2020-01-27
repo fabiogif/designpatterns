@@ -1,5 +1,5 @@
 <?php 
-    require_once 'templateDeImpostoCondicional.php';
+    //require_once 'templateDeImpostoCondicional.php';
 
 class ICMS  extends TemplateDeImpostoCondicional{
 

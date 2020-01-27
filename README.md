@@ -1,7 +1,7 @@
 # designpatterns
-Aulas aluna
+Aulas Alura
 
-Projeto para inciar as melhores praticas.
+Projeto para inciar com as melhores praticas.
 
-
-localhost
+#Template Method
+#Chain of Responsibility

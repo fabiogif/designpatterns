@@ -1,7 +1,6 @@
 <?php 
-    //require_once 'templateDeImpostoCondicional.php';
 
-class ICMS  extends TemplateDeImpostoCondicional{
+class ICMS extends TemplateDeImpostoCondicional{
 
     public function deveUsarMaximo(Orcamento $Orcamento){
         return $Orcamento->getValor() > 500;

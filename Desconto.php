@@ -5,4 +5,3 @@
         public function setProximo(Desconto $proximo);
        
     }
-?>

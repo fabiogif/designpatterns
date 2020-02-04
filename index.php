@@ -15,7 +15,7 @@ require "calculadoraDeDesconto.php";
 
 //Impostos  
 require "imposto.php";
-require "templateDeImpostoCondicional.php"; 
+require "templateDeImpostoCondicional.php";
 require  "ISS.php";
 require "ICMS.php";
 require "IPVA.php";
@@ -50,13 +50,14 @@ echo '</br>';
 //Chain Of Responsibility
 echo '</br> Testes de Descontos: </br>';
 
-    $calculadoraDeDescontos = new calculadoraDeDesconto();
-    echo "Desconto: ";
- 
-    $reforma->addItem(new Item("Tijolo", 290));
-    $reforma->addItem(new Item("Arenoso", 250));
-    $reforma->addItem(new Item("Arenoso", 250));
-    $reforma->addItem(new Item("Arenoso", 250));
-        
-    echo $calculadoraDeDescontos->desconto($reforma);
+$calculadoraDeDescontos = new calculadoraDeDesconto();
+echo "Desconto: ";
 
+$reforma->addItem(new Item("Tijolo", 290));
+$reforma->addItem(new Item("Arenoso", 250));
+$reforma->addItem(new Item("Arenoso", 250));
+$reforma->addItem(new Item("Arenoso", 250));
+$reforma->addItem(new Item("Arenoso", 250));
+
+
+echo $calculadoraDeDescontos->desconto($reforma);

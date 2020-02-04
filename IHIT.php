@@ -17,10 +17,10 @@ class IHIT  extends TemplateDeImpostoCondicional {
         }
     }
     protected function taxacaoMaxima(Orcamento $Orcamento){
-        return $Orcamento->getValor() * 0.13 + 100;
+        return $Orcamento->getValor() * 0.13 + 100 + $this->calculoOutroImposto($Orcamento);
     }
     protected function taxacaoMinima(Orcamento $Orcamento){
-        return $Orcamento->getValor() * (0.1 * count($Orcamento->getItens));
+        return $Orcamento->getValor() * (0.1 * count($Orcamento->getItens) + $this->calculoOutroImposto($Orcamento));
     }
 
 }

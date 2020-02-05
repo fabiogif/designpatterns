@@ -22,6 +22,7 @@ require "IPVA.php";
 require "IHIT.php";
 require "IKCV.php";
 require "ICPP.php";
+require "ImpostoMuitoAlto.php";
 
 $reforma = new Orcamento(490);
 $calculadora = new calculadoraDeImposto();
@@ -47,6 +48,11 @@ echo '</br>';
 echo 'IKCV: ';
 echo $calculadora->calcula($reforma, new IKCV());
 echo '</br>';
+
+echo 'Imposto Muito Alto: ';
+echo $calculadora->calcula($reforma, new ImpostoMuitoAlto(new ICMS()));
+echo '</br>';
+
 //Chain Of Responsibility
 echo '</br> Testes de Descontos: </br>';
 
